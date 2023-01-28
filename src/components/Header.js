@@ -1,23 +1,43 @@
 import React from "react";
+import headerCar from '../images/headerCar.png';
+import '../style.css'; 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-const Header = () => {
+
+function Header () {
     return (
-        <div class="row" style="background-color: #cfd4ed;">
-            <div class="sewa col-md-5 mt-5 ml-5">
+        <div className="row" style={{backgroundColor: "#cfd4ed"}}>
+            <div className="col-md-5">
                 <div>
-                    <p class="font-weight-bold text-left mt-5 offset-md-1" style="font-size: 2.5em;">
+                    <p className="headerText offset-md-1">
                         Sewa & Rental Mobil Terbaik di Kawasan (Lokasimu)</p>
                 </div>
                 <div>
-                    <p class="font-weight-bold text-left text-left offset-md-1">
+                    <p className="text1 offset-md-1">
                         Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
                 </div>
-                <button type="button" class="btn btn-success offset-md-1">Mulai Sewa Mobil</button>
+                <button type="button" className="butSewa btn btn-success offset-md-1">
+                    <p className="textSewa">Mulai Sewa Mobil</p>
+                </button>
             </div>
-            <div class="col-md-6 mt-5 ml-4">
-                <img class="card-img-top mt-5 offset-md-1" src="ioniq.jpg" alt="Gambar Mobil"></img>
+            <div className="col-md-6">
+                <img className="fotoMobil" src={headerCar} alt="Gambar Mobil"></img>
             </div>
         </div>
+        // <Container style={{backgroundColor: "#cfd4ed"}}>
+        //     <Row>
+        //         <Col>
+        //             <p className="font-weight-bold text-left justify-content-md-left" style={{fontSize: "2.5em;"}}>
+        //             Sewa & Rental Mobil Terbaik di Kawasan (Lokasimu)</p>
+        //         </Col>
+        //         <Col>
+        //         <p className="font-weight-bold text-left" style={{fontSize: "2.5em;"}}>
+        //             Sewa & Rental Mobil Terbaik di Kawasan (Lokasimu)</p>
+        //         </Col>
+        //     </Row>
+        // </Container>
     )
 }
 

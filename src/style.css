@@ -1,0 +1,173 @@
+.navbar {
+    background-color: #cfd4ed;
+}
+
+.navbar-nav {
+    margin-right: 120px;
+    font-weight: bold;
+}
+
+.buttonHome {
+    height: 34px; 
+    width: 100px;
+    margin-left: 110px;
+    margin-top: 25px;
+    background-color: #0D28A6;
+}
+
+.fotoMobil {
+    margin-top: 53px;
+    width: 100%;
+    height: 450px; 
+    margin-left: 110px;
+}
+
+.headerText {
+    position: absolute;
+    font-weight: bold;
+    line-height: 150%;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: left;
+    width: 568px;
+    height: 108px;
+    top: 220px;
+}
+
+.text1 {
+    position: absolute;
+    font-weight: bold;
+    text-align: left;
+    width: 468px;
+    height: 60px;
+    top: 350px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.text2 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.text3 {
+    font-weight: bold;
+    margin-top: 200px;
+}
+
+.serviceText {
+    margin-top: 150px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+}
+
+.butSewa {
+    position: absolute;
+    width: 140px;
+    height: 36px;
+    top: 430px;
+    left: 1px;
+    /* background-color:  #5CB85F; */
+}
+
+.textSewa {
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 22px;
+    width: auto;
+    height: auto;
+}
+
+.avaService {
+    width: 300px;
+    height: 370px;
+    margin-left: 100px;
+    margin-top: 104px;
+}
+
+.whyText {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 100px;
+    margin-right: 400px;
+}
+
+.listSewa {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 45px;
+    text-align: left;
+}
+
+li {
+    list-style: none;
+}
+
+.correctList {
+    list-style-image: url(images/correct.png);
+}
+
+.ftext1 {
+    margin-left: 120px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.ftext2 {
+    text-align: left;
+}
+
+.fbutton {
+    height: 34px;
+    width: 100px;
+    background-color: #0D28A6;
+    margin-right: 55px;
+}
+
+.footerList {
+    /* display: inline-block; */
+    list-style-image: url(images/correct.png);
+}
+
+.fa {
+    padding: 15px;
+    font-size: 2px;
+    width: 2px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #3f729b;
+    color: white;
+}
+
+.fa-twitter {
+    background: #00acee;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-twitch {
+    background: #6441a5;
+    color: white;
+}
+
