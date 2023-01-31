@@ -1,6 +1,5 @@
 import React from "react";
 import '../style.css'; 
-import test1 from "../images/correct.png";
 
 
 
@@ -33,15 +32,13 @@ const Footer = () => {
                     <p><strong> Connect with us </strong></p>
                 </div>
                 <div className="row">
-                    {/* <li className="footerList"></li>
-                    <li className="footerList"></li> */}
                     <div className="col-sm-2"><a href="#" class="fa fa-facebook"></a></div>
                     <div className="col-sm-2"><a href="#" class="fa fa-instagram"></a></div>
                     <div className="col-sm-2"><a href="#" class="fa fa-twitter"></a></div>
                     <div className="col-sm-2"><a href="#" class="fa fa-google"></a></div>
                     <div className="col-sm-2"><a href="#" class="fa fa-twitch"></a></div>
                 </div>
-               
+            
             </div>
             <div className="col-md-3">
                 <p><strong> Copyright Binar 2022 </strong></p>

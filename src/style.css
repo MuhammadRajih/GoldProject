@@ -1,3 +1,12 @@
+body {
+    padding: 0 12px;
+}
+
+.home{
+    text-align: left;
+    padding: 0 100px;
+}
+
 .navbar {
     background-color: #cfd4ed;
 }
@@ -10,16 +19,13 @@
 .buttonHome {
     height: 34px; 
     width: 100px;
-    margin-left: 110px;
-    margin-top: 25px;
-    background-color: #0D28A6;
+    background-color: red;
 }
 
 .fotoMobil {
-    margin-top: 53px;
-    width: 100%;
+    margin-top: 50px;
+    width: 640px;
     height: 450px; 
-    margin-left: 110px;
 }
 
 .headerText {
@@ -31,19 +37,21 @@
     text-align: left;
     width: 568px;
     height: 108px;
-    top: 220px;
+}
+
+.headText {
+    text-align: left;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 140px;
+    padding-left: 100px;
 }
 
 .text1 {
-    position: absolute;
     font-weight: bold;
-    text-align: left;
-    width: 468px;
-    height: 60px;
-    top: 350px;
-    font-weight: 700;
     font-size: 14px;
-    line-height: 20px;
+    text-align: left;
+    padding-left: 100px;
 }
 
 .text2 {
@@ -54,6 +62,7 @@
 }
 
 .text3 {
+    text-align: left;
     font-weight: bold;
     margin-top: 200px;
 }
@@ -67,12 +76,18 @@
 }
 
 .butSewa {
-    position: absolute;
+    margin-left: 100px;
     width: 140px;
     height: 36px;
-    top: 430px;
-    left: 1px;
-    /* background-color:  #5CB85F; */
+    border-radius: 10px;
+}
+
+.butSewa1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+    height: 36px;
+    border-radius: 10px;
 }
 
 .textSewa {
@@ -91,10 +106,11 @@
 }
 
 .whyText {
+    text-align: left;
     font-weight: bold;
     font-size: 24px;
     margin-top: 100px;
-    margin-right: 400px;
+    padding-left: 100px;
 }
 
 .listSewa {
@@ -130,7 +146,6 @@ li {
 }
 
 .footerList {
-    /* display: inline-block; */
     list-style-image: url(images/correct.png);
 }
 
@@ -171,3 +186,82 @@ li {
     color: white;
 }
 
+.CardSewa {
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+    background-color: #0D28A6; 
+    border-radius: 10px;
+    color: white;
+    height: 280px;
+} 
+
+.textFaq {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+}
+
+.textFaq1 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 14px;
+}
+
+.butDrop {
+    height: 56px;
+    width: 668px;
+}
+
+.textDrop {
+    font-weight: normal;
+    text-align: left;
+    color: black;
+    margin-left: 10px;
+}
+
+.whyCard {
+    text-align: left;
+    padding: 20px 100px;
+}
+
+.whyCard1 {
+    padding-left: 0;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .hd {
+        padding-bottom: 700px;
+    }
+    .headText, .text1{
+        padding-left: 0;
+        padding-top: 10px;
+    }
+    .butSewa{
+        margin-left: 0;
+    }
+    .fotoMobil {
+        /* position: absolute; */
+        margin-top: 35px;
+        height: 400px;
+        width: 500px;
+    }
+    .home{
+        text-align: left;
+        padding: 0 10px;
+    }
+    .avaService {
+        margin-left: 0;
+    }
+    .whyText, .text3 {
+        text-align: center;
+    }
+    .CardSewa {
+        border-radius: 10px;
+        height: 450px;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0 100px;
+    }
+}
