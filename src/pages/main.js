@@ -3,7 +3,7 @@ import Navigasi from "../components/Navigasi";
 import Header from "../components/Header";
 import OurServices from "../components/OurServices";
 import WhyUs from "../components/WhyUS";
-import Carousel from "../components/Carousel";
+import Slider from "../components/Slider";
 import CardSewa from "../components/CardSewa";
 import Faq from "../components/FAQ";
 import Footer from "../components/Footer";
@@ -16,7 +16,7 @@ const Main = () => {
         <Header />
         <OurServices />
         <WhyUs />
-        {/* <Carousel /> */}
+        <Slider />
         <CardSewa />
         <Faq />
         <Footer />

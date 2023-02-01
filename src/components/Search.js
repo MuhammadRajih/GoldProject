@@ -1,63 +1,80 @@
-import React from "react";
+import React,{useState } from "react";
 import '../style.css'; 
+import { Link } from 'react-router-dom';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import Button from 'react-bootstrap/Button';
 
 
 function Search () {
+    // const [show, setShow] = useState(false);
+    // const handleClose = () => setShow(false);
+    // const handleShow = () => setShow(true);
+
     return (
-        <div className="row justify-content-md-center">
-            <div className="card" style={{width: "1047px", height: "106px"}}>
-                <div className="card-body">
-                    <div className="row ">
-                        <div className="col-md-3 mt-3">
-                            <p>Nama Mobil</p>
-                            <div className="input-group mb-3">
-                                <input type="text" className="form-control" placeholder="Ketik nama/tipe mobil" aria-label="Username" aria-describedby="basic-addon1" />
-                            </div>
-                        </div>
-                        <div className="col-md-2 mt-3">
-                            <p>Kategori</p>
-                            <div className="dropdown">
-                                <button className="btn btn-secondary dropdown-toggle bg-light text-dark text-left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{width: "200px"}}>
-                                    Masukan Kapasitas Mobil
-                                </button>
-                                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a className="dropdown-item" href="#">2 - 4 orang</a>
-                                    <a className="dropdown-item" href="#">4 - 6 orang </a>
-                                    <a className="dropdown-item" href="#">6 - 8 orang </a>
+        // <>
+        // <Button variant="primary" onClick={handleShow}>
+        //     Launch
+        // </Button>
+        // <Offcanvas show={show} onHide={handleClose}>
+            <div className="row justify-content-md-center" style={{marginTop:"10px", position:"absolute", top:"490px", left:"150px"}}>
+                <div className="card" style={{width: "1047px", height: "106px"}}>
+                    <div className="card-body">
+                        <div className="d-flex gap-3">
+                            <div>
+                                <p className="searchText">Nama Mobil</p>
+                                <div className="input-group mb-3">
+                                    <input type="text" className="form-control" placeholder="Ketik nama/tipe mobil" aria-label="Username" aria-describedby="basic-addon1" style={{fontSize:"14px",textAlign:"left"}}/>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-2 mt-3" style={{marginleft: "40px"}}>
-                            <p>Harga</p>
-                            <div className="dropdown">
-                                <button className="btn btn-secondary dropdown-toggle bg-light text-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Masukan Harga Sewa per Hari
-                                </button>
-                                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a className="dropdown-item" href="#">Rp. 400.000</a>
-                                    <a className="dropdown-item" href="#">Rp. 400.000 - Rp. 600.000</a>
-                                    <a className="dropdown-item" href="#">Rp. 400.000</a>
+                            <div>
+                                <p className="searchText">Kategori</p>
+                                <div className="dropdown">
+                                    <button className="btn btn-secondary dropdown-toggle bg-light text-dark text-left"  type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{width: "200px", fontSize:"14px",textAlign:"left"}}>
+                                        Masukan Kapasitas Mobil
+                                    </button>
+                                    <ul className="dropdown-menu">
+                                        <li><a className="dropdown-item" href="#">2 - 4 orang</a></li>
+                                        <li><a className="dropdown-item" href="#">4 - 6 orang</a></li>
+                                        <li><a className="dropdown-item" href="#">6 - 8 orang</a></li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-md-2 mt-3" style={{marginleft: "30px"}}>
-                            <p>Status</p>
-                            <div className="dropdown" >
-                                <button className="btn btn-secondary dropdown-toggle bg-light text-dark text-left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{width: "200px"}}>
-                                    Disewa
-                                </button>
-                                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a className="dropdown-item" href="#">Tidak Tersedia</a>
+                            <div>
+                                <p className="searchText">Harga</p>
+                                <div className="dropdown">
+                                    <button className="btn btn-secondary dropdown-toggle bg-light text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{width: "219px", fontSize:"14px",textAlign:"left"}}>
+                                        Masukan Harga Sewa per Hari
+                                    </button>
+                                    <ul className="dropdown-menu">
+                                        <li><a className="dropdown-item" href="#">&lt;Rp. 400.000</a></li>
+                                        <li><a className="dropdown-item" href="#">Rp. 400.000 - Rp. 600.000</a></li>
+                                        <li><a className="dropdown-item" href="#">&gt;Rp. 600.000</a></li>
+                                    </ul>
                                 </div>
                             </div>
+                            <div>
+                                <p className="searchText">Status</p>
+                                <div className="dropdown" >
+                                    <button className="btn btn-secondary dropdown-toggle bg-light text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{width: "200px", fontSize:"14px",textAlign:"left"}}>
+                                        Disewa
+                                    </button>
+                                    <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a className="dropdown-item" href="#">Tidak Tersedia</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <div className="">
+                                <a href="#" className="btn btn-success" style={{height: "33px" ,width: "92px", fontSize: "14px", marginTop: "35px"}}>Cari Mobil</a>
+                            </div> */}
+                            <Link to="/HasilCari" className=" btn btn-success" style={{height: "33px" ,width: "92px", fontSize: "14px", marginTop: "35px"}}>
+                                Cari Mobil
+                            </Link>
                         </div>
-                    </div>
-                    <div className="col-md-2">
-                        <a href="#" className="btn btn-success" style={{height: "33px" ,width: "92px", fontSize: "14px", marginTop: "40px", marginLeft: "50px"}}>Cari Mobil</a>
                     </div>
                 </div>
             </div>
-        </div>
+        // </Offcanvas>
+        // </>
     )   
 }
 

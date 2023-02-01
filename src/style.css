@@ -19,12 +19,11 @@ body {
 .buttonHome {
     height: 34px; 
     width: 100px;
-    background-color: red;
 }
 
 .fotoMobil {
     margin-top: 50px;
-    width: 640px;
+    width: 660px;
     height: 450px; 
 }
 
@@ -99,10 +98,9 @@ body {
 }
 
 .avaService {
-    width: 300px;
-    height: 370px;
-    margin-left: 100px;
-    margin-top: 104px;
+    width: 482px;
+    height: 450px;
+    margin-top: 100px;
 }
 
 .whyText {
@@ -128,8 +126,17 @@ li {
     list-style-image: url(images/correct.png);
 }
 
+.cardFooter{
+    padding: 0 100px;
+}
+
+.cardConnect{
+    margin-bottom: -5px;
+    padding-left: 21px;
+    text-align: left;
+}
+
 .ftext1 {
-    margin-left: 120px;
     font-weight: bold;
     text-align: left;
 }
@@ -150,40 +157,13 @@ li {
 }
 
 .fa {
-    padding: 15px;
+    padding: 0 20px;
     font-size: 2px;
     width: 2px;
-    border-radius: 50%;
-    margin-left: 40px;
 }
 
 .fa:hover {
     opacity: 0.7;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-instagram {
-    background: #3f729b;
-    color: white;
-}
-
-.fa-twitter {
-    background: #00acee;
-    color: white;
-}
-
-.fa-google {
-    background: #dd4b39;
-    color: white;
-}
-
-.fa-twitch {
-    background: #6441a5;
-    color: white;
 }
 
 .CardSewa {
@@ -197,18 +177,21 @@ li {
 } 
 
 .textFaq {
+    padding-left: 100px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     font-size: 24px;
 }
 
 .textFaq1 {
-    font-weight: normal;
-    text-align: center;
+    padding-left: 100px;
+    font-weight: bold;
+    text-align: left;
     font-size: 14px;
 }
 
 .butDrop {
+    margin-right: 100px;
     height: 56px;
     width: 668px;
 }
@@ -229,6 +212,48 @@ li {
     padding-left: 0;
 }
 
+.card-text {
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.butNext,.butPrev {
+    border-radius: 100%;
+}
+
+.sliderButton{
+    margin: 0 auto;
+    justify-content:center;
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.butNext:hover{
+    background-color: #5CB85F;
+}
+.butPrev:hover{
+    background-color: #5CB85F;
+}
+
+.searchText{
+    font-size: 12px;
+    text-align: left;
+}
+
+.hasilCard {
+    width: 333px;
+    height: 478px;
+}
+
+.gambarHasil{
+    padding: 30px 10px;
+}
+
+.textHasil {
+    text-align: left;
+}
 
 @media only screen and (max-width: 992px) {
     .hd {
@@ -242,7 +267,6 @@ li {
         margin-left: 0;
     }
     .fotoMobil {
-        /* position: absolute; */
         margin-top: 35px;
         height: 400px;
         width: 500px;
@@ -263,5 +287,18 @@ li {
         margin-left: 50px;
         margin-right: 50px;
         padding: 0 100px;
+    }
+    .butDrop {
+
+        height: 56px;
+        width: max-content;
+    }
+    .serviceText {
+        justify-content: center;
+        padding-left: 10px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: left;
     }
 }

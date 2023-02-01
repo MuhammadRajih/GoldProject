@@ -1,17 +1,21 @@
 import React from "react";
 import '../style.css'; 
-
+import facebook from '../images/icon_facebook.png';
+import insta from '../images/icon_instagram.png';
+import twitter from '../images/icon_twitter.png';
+import twitch from '../images/icon_twitch.png';
+import email from '../images/icon_mail.png';
 
 
 const Footer = () => {
     return (
-        <div className="row" >
+        <div className="row cardFooter">
             <div className="ftext1 col-md-3">
                 <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
                 <p>binarcarrental@gmail.com</p>
                 <p>081-233-334-808</p>
             </div>
-            <div className="ftext2 col-md-2">
+            <div className="ftext2 col-md-3">
                 <ul>
                     <li className="nav-item">
                         <a className="nav-link" href="#">Our Services</a>
@@ -27,18 +31,17 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
-            <div className="col-md-2">
-                <div className="row">
+            <div className="col-md-3">
+                <div className="row cardConnect">
                     <p><strong> Connect with us </strong></p>
                 </div>
-                <div className="row">
-                    <div className="col-sm-2"><a href="#" class="fa fa-facebook"></a></div>
-                    <div className="col-sm-2"><a href="#" class="fa fa-instagram"></a></div>
-                    <div className="col-sm-2"><a href="#" class="fa fa-twitter"></a></div>
-                    <div className="col-sm-2"><a href="#" class="fa fa-google"></a></div>
-                    <div className="col-sm-2"><a href="#" class="fa fa-twitch"></a></div>
+                <div className="d-flex">
+                    <a href="#" class="fa"><img src={facebook}></img></a>
+                    <a href="#" class="fa"><img src={insta}></img></a>
+                    <a href="#" class="fa"><img src={twitter}></img></a>
+                    <a href="#" class="fa"><img src={email}></img></a>
+                    <a href="#" class="fa"><img src={twitch}></img></a>
                 </div>
-            
             </div>
             <div className="col-md-3">
                 <p><strong> Copyright Binar 2022 </strong></p>

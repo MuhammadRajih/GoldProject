@@ -1,19 +1,20 @@
 import React from "react";
 import Navigasi from "../components/Navigasi";
-import Header from "../components/Header1";
-import Search from "../components/Search";
+import Search from "../components/HasilSearch";
+import HasilCard from "../components/HasilCard";
 import Footer from "../components/Footer";
 
 
-const Main = () => {
+function HasilPencarian() {
     return (
       <div>
         <Navigasi />
-        <Header />
+        <div style={{height:"200px"}}></div>
         <Search />
+        <HasilCard />
         <Footer />
       </ div>
     )
 }
 
-export default Main;
+export default HasilPencarian;
