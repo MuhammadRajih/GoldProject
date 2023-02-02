@@ -48,7 +48,7 @@ function Detail() {
                             <h7 className="row card-title textDetail" style={{paddingLeft:"10px"}}>Innova</h7>
                             <div className="d-flex">
                                 <img src={user} style={{width:"18px", height:"20px"}}></img>
-                                <p style={{fontWeight:"normal", paddingLeft:"10px"}}>4-6 Orang</p>
+                                <p style={{fontWeight:"normal", paddingLeft:"10px"}}>4-7 Orang</p>
                             </div>
                             <div className="row">
                                 <p className="card-text col-md-6 mt-5">Total</p>
