@@ -16,7 +16,7 @@ const Footer = () => {
                 <p>081-233-334-808</p>
             </div>
             <div className="ftext2 col-md-3">
-                <ul>
+                <ul style={{listStyle:"none"}}>
                     <li className="nav-item">
                         <a className="nav-link" href="#">Our Services</a>
                     </li>

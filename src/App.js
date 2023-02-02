@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import Main from './pages/Main';
 import CariMobil from './pages/Carimobil';
 import HasilCari from './pages/HasilPencarian';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import DetailMobil from './pages/DetailMobil';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
           <Route exact path='/' element={<Main />}></Route>
           <Route exact path='/CariMobil' element={<CariMobil />}></Route>
           <Route exact path='/HasilCari' element={<HasilCari />}></Route>
+          <Route exact path='/DetailMobil' element={<DetailMobil />}></Route>
         </Routes>
       </div>
     </Router>

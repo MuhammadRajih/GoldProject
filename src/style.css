@@ -118,10 +118,6 @@ body {
     text-align: left;
 }
 
-li {
-    list-style: none;
-}
-
 .correctList {
     list-style-image: url(images/correct.png);
 }
@@ -252,6 +248,25 @@ li {
 }
 
 .textHasil {
+    text-align: left;
+}
+
+.textDetail {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.detailCard{
+    height: 618px;
+}
+
+.detailCard1{
+    height: 435px;
+}
+
+.listDetail{
+    color: gray;
     text-align: left;
 }
 

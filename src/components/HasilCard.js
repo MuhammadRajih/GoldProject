@@ -16,7 +16,7 @@ function HasilCard () {
                             <p className="card-text">Rp 500.000 / hari</p>
                             <p className="card-text" style={{fontSize:"14px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                            <Link to="/" className="btn btn-success mt-3" style={{width:"285px", height:"48px"}}>
+                            <Link to="/DetailMobil" className="btn btn-success mt-3" style={{width:"285px", height:"48px"}}>
                                 <p className="d-flex justify-content-center mt-1">Pilih Mobil</p>
                             </Link>
                         </div>
@@ -32,7 +32,7 @@ function HasilCard () {
                             <p className="card-text">Rp 500.000 / hari</p>
                             <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                            <Link to="/" className="btn btn-success mt-3" style={{width:"285px", height:"48px"}}>
+                            <Link to="/DetailMobil" className="btn btn-success mt-3" style={{width:"285px", height:"48px"}}>
                              <p className="d-flex justify-content-center mt-1">Pilih Mobil</p>
                             </Link>
                         </div>
@@ -48,7 +48,7 @@ function HasilCard () {
                             <p className="card-text">Rp 500.000 / hari</p>
                             <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                            <Link to="/" className="btn btn-success mt-3" style={{width:"285px", height:"48px"}}>
+                            <Link to="/DetailMobil" className="btn btn-success mt-3" style={{width:"285px", height:"48px"}}>
                             <p className="d-flex justify-content-center mt-1">Pilih Mobil</p>
                             </Link>
                         </div>
