@@ -3,10 +3,10 @@ import '../style.css';
 
 function HasilSearch () {
     return (
-        <div className="row justify-content-md-center" style={{position:"absolute", top:"100px", left:"150px"}}>
-            <div className="card" style={{width: "1047px", height: "106px"}}>
-                <div className="card-body">
-                    <div className="d-flex gap-3">
+        <div className="row cardCari">
+            <div className="card cardSearch1">
+                <div className="card-body cardSearch3">
+                    <div className="cardSearch2">
                         <div>
                             <p className="searchText">Nama Mobil</p>
                             <div className="input-group mb-3">
@@ -16,7 +16,7 @@ function HasilSearch () {
                         <div>
                             <p className="searchText">Kategori</p>
                             <div className="dropdown">
-                                <button className="btn btn-secondary bg-light text-dark text-left" disabled type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{width: "200px", fontSize:"14px",textAlign:"left"}}>
+                                <button className="searchButton btn-secondary bg-light text-dark text-left" disabled type="button" data-bs-toggle="dropdown" aria-expanded="false" >
                                     2 - 4 orang
                                 </button>
                                 {/* <ul className="dropdown-menu">
@@ -29,7 +29,7 @@ function HasilSearch () {
                         <div>
                             <p className="searchText">Harga</p>
                             <div className="dropdown">
-                                <button className="btn btn-secondary bg-light text-dark" disabled type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{width: "219px", fontSize:"14px",textAlign:"left"}}>
+                                <button className="searchButton btn-secondary bg-light text-dark" disabled type="button" data-bs-toggle="dropdown" aria-expanded="false" >
                                     Rp. 400.000 - Rp. 600.000
                                 </button>
                                 {/* <ul className="dropdown-menu">
@@ -42,7 +42,7 @@ function HasilSearch () {
                         <div>
                             <p className="searchText">Status</p>
                             <div className="dropdown" >
-                                <button className="btn btn-secondary bg-light text-dark" disabled type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{width: "200px", fontSize:"14px",textAlign:"left"}}>
+                                <button className="searchButton btn-secondary bg-light text-dark" disabled type="button" data-bs-toggle="dropdown" aria-expanded="false" >
                                     Disewa
                                 </button>
                                 {/* <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">

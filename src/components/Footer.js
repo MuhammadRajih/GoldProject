@@ -15,8 +15,8 @@ const Footer = () => {
                 <p>binarcarrental@gmail.com</p>
                 <p>081-233-334-808</p>
             </div>
-            <div className="ftext2 col-md-3">
-                <ul style={{listStyle:"none"}}>
+            <div className="col-md-3">
+                <ul className="ftext2" style={{listStyle:"none"}}>
                     <li className="nav-item">
                         <a className="nav-link" href="#">Our Services</a>
                     </li>
@@ -31,11 +31,11 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
-            <div className="col-md-3">
-                <div className="row cardConnect">
+            <div className="col-md-3 cardConnect">
+                <div className="row ">
                     <p><strong> Connect with us </strong></p>
                 </div>
-                <div className="d-flex">
+                <div className="itemConnect">
                     <a href="#" class="fa"><img src={facebook}></img></a>
                     <a href="#" class="fa"><img src={insta}></img></a>
                     <a href="#" class="fa"><img src={twitter}></img></a>
@@ -43,7 +43,7 @@ const Footer = () => {
                     <a href="#" class="fa"><img src={twitch}></img></a>
                 </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 cRight">
                 <p><strong> Copyright Binar 2022 </strong></p>
                 <button href="#" className="fbutton btn btn-primary"></button>
             </div>

@@ -10,8 +10,8 @@ function DetailMobil() {
       <div>
         <Navigasi />
         <div style={{height:"200px"}}></div>
-        <Detail />
         <Search />
+        <Detail />
         <Footer />
       </ div>
     )

@@ -9,7 +9,6 @@ function HasilPencarian() {
     return (
       <div>
         <Navigasi />
-        <div style={{height:"200px"}}></div>
         <Search />
         <HasilCard />
         <Footer />

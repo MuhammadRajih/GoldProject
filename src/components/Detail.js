@@ -46,8 +46,8 @@ function Detail() {
                         <img src={mobil} alt="ikon" className="gambarHasil"></img>
                         <div className="card-text">
                             <h7 className="row card-title textDetail" style={{paddingLeft:"10px"}}>Innova</h7>
-                            <div className="d-flex">
-                                <img src={user} style={{width:"18px", height:"20px"}}></img>
+                            <div className="d-flex align-items-center">
+                                <img src={user} style={{width:"13px", height:"13px"}}></img>
                                 <p style={{fontWeight:"normal", paddingLeft:"10px"}}>4-7 Orang</p>
                             </div>
                             <div className="row">

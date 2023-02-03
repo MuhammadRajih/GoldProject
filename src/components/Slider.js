@@ -51,14 +51,14 @@ import rate from '../images/Rate.png';
 
 function Slider() {
   return (
-    <div>
+    <div className="sliderSection">
       <h2 style={{fontSize: "24px"}}>Testimonial</h2>
       <p style={{fontSize: "14px",fontWeight:"bold"}}>Berbagai review positif dari para pelanggan kami</p>
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
-        <div class="carousel-inner" style={{paddingLeft: "350px", textAlign:"center"}}>
-          <div class="carousel-item active " >
-            <div className="card mb-3 d-flex flex-row align-items-center" style={{height: "270px", width: "619px", backgroundColor:"#F1F3FF",padding:"0px 50px"}}>
-              <div className="">
+        <div class="carousel-inner" style={{ textAlign:"center"}}>
+          <div class="carousel-item active" >
+            <div className="cardCarousel align-items-center gap-4">
+              <div>
                 <img src={photo1} class="d-block" alt="gambar"/>
               </div>
               <div className="card-body">
@@ -70,7 +70,7 @@ function Slider() {
             </div>
           </div>
           <div class="carousel-item">
-            <div className="card mb-3 d-flex flex-row align-items-center" style={{height: "270px", width: "619px", backgroundColor:"#F1F3FF",padding:"0px 50px"}}>
+            <div className="cardCarousel align-items-center gap-4">
               <div className="">
                 <img src={photo} class="d-block" alt="gambar"/>
               </div>
@@ -83,7 +83,7 @@ function Slider() {
             </div>
           </div>
           <div class="carousel-item">
-            <div className="card mb-3 d-flex flex-row align-items-center" style={{height: "270px", width: "619px", backgroundColor:"#F1F3FF",padding:"0px 50px"}}>
+            <div className="cardCarousel align-items-center gap-4">
               <div className="">
                 <img src={photo1} class="d-block" alt="gambar"/>
               </div>
@@ -99,7 +99,7 @@ function Slider() {
             </div>
           </div>
         </div>
-        <div className="sliderButton">
+        <div className="sliderButton mt-3">
           <button className="butNext carousel-control-prev-icon" data-bs-target="#carouselExampleControls" data-bs-slide="prev"></button>
           <button className="butPrev carousel-control-next-icon" data-bs-target="#carouselExampleControls" data-bs-slide="next"></button>
         </div>

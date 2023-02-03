@@ -2,6 +2,10 @@ body {
     padding: 0 12px;
 }
 
+.accordion-item{
+    width: 668px;
+}
+
 .home{
     text-align: left;
     padding: 0 100px;
@@ -111,6 +115,10 @@ body {
     padding-left: 100px;
 }
 
+.whyRow{
+    padding: 0 100px;
+}
+
 .listSewa {
     font-weight: bold;
     font-size: 14px;
@@ -123,13 +131,21 @@ body {
 }
 
 .cardFooter{
-    padding: 0 100px;
+    padding: 100px 100px 0 100px;
+}
+
+.cardFaq{
+    height: "600px"
 }
 
 .cardConnect{
     margin-bottom: -5px;
-    padding-left: 21px;
     text-align: left;
+}
+
+.itemConnect{
+    display: flex;
+    gap: 35px;
 }
 
 .ftext1 {
@@ -141,10 +157,23 @@ body {
     text-align: left;
 }
 
+.searchButton{
+    width: 219px;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.searchButton1{
+    width: 219px;
+    font-size: 14px;
+    text-align: left;
+}
+
 .fbutton {
     height: 34px;
     width: 100px;
-    background-color: #0D28A6;
     margin-right: 55px;
 }
 
@@ -153,7 +182,6 @@ body {
 }
 
 .fa {
-    padding: 0 20px;
     font-size: 2px;
     width: 2px;
 }
@@ -163,6 +191,9 @@ body {
 }
 
 .CardSewa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-left: 100px;
     margin-right: 100px;
     justify-content: center;
@@ -171,6 +202,35 @@ body {
     color: white;
     height: 280px;
 } 
+
+.cardSearch{
+    top: 490px;
+    left: 150px;
+    position: absolute;
+    justify-content: center;
+}
+
+.cardCari{
+    top: 100px;
+    left: 150px;
+    position: absolute;
+    justify-content: center;
+}
+
+.cardSearch1{
+    width: 1047px;
+}
+
+.cardSearch2{
+    display: flex;
+    gap: 20px ;
+}
+
+.cRight{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
 
 .textFaq {
     padding-left: 100px;
@@ -186,12 +246,6 @@ body {
     font-size: 14px;
 }
 
-.butDrop {
-    margin-right: 100px;
-    height: 56px;
-    width: 668px;
-}
-
 .textDrop {
     font-weight: normal;
     text-align: left;
@@ -202,10 +256,16 @@ body {
 .whyCard {
     text-align: left;
     padding: 20px 100px;
+
 }
 
 .whyCard1 {
     padding-left: 0;
+}
+
+.textCard{
+    font-weight: bold;
+    font-size: 36px;
 }
 
 .card-text {
@@ -243,6 +303,12 @@ body {
     height: 478px;
 }
 
+.hasil{
+    padding: 0 125px;
+    height: 700px;
+    padding-top: 200px;
+}
+
 .gambarHasil{
     padding: 30px 10px;
 }
@@ -270,50 +336,185 @@ body {
     text-align: left;
 }
 
-@media only screen and (max-width: 992px) {
-    .hd {
-        padding-bottom: 700px;
+.cardCarousel {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    height: 270px;
+    width: 619px;
+    background-color:#F1F3FF;
+    padding:0px 50px;
+    margin:0 auto;
+}
+
+.textCard1{
+    padding: 0 350px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 990px) {
+    .buttonHome {
+        position: absolute;
+        display: block;
+        top: 10px;
+        left: 10px;
+        width: 90px;
     }
-    .headText, .text1{
+
+    .headText {
         padding-left: 0;
         padding-top: 10px;
     }
-    .butSewa{
-        margin-left: 0;
+    
+    .text1 {
+        padding-left: 0;
+        padding-top: 10px;
     }
-    .fotoMobil {
-        margin-top: 35px;
-        height: 400px;
-        width: 500px;
-    }
-    .home{
-        text-align: left;
-        padding: 0 10px;
-    }
-    .avaService {
-        margin-left: 0;
-    }
-    .whyText, .text3 {
-        text-align: center;
-    }
-    .CardSewa {
-        border-radius: 10px;
-        height: 450px;
-        margin-left: 50px;
-        margin-right: 50px;
-        padding: 0 100px;
-    }
-    .butDrop {
 
-        height: 56px;
-        width: max-content;
+    .butSewa{
+        margin-left: 0px;
     }
+
+    .fotoMobil{
+        margin-top: 35px;
+        height: 331px;
+        width: inherit;
+    }
+
+    .hd {
+        padding-bottom: 700px;
+    }
+
+    .avaService {
+        width: inherit;
+        height: 350px;
+        margin-top: 100px;
+    }
+
     .serviceText {
-        justify-content: center;
-        padding-left: 10px;
+        padding-right: 0px;
         font-weight: bold;
         font-size: 24px;
         line-height: 36px;
         text-align: left;
+    }
+
+    .whyRow {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .whyCard {
+        text-align: left;
+        padding: 20px 20px;
+    }
+
+    .cardCarousel {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .textCard{
+        padding: 15px 70px;
+        font-weight: 700;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .textCard1{
+        padding: 0 70px;
+    }
+
+    .CardSewa {
+        width: 100%;
+        text-align: left;
+        margin: 0 auto;
+        height: auto;
+        background-color: #0D28A6; 
+        border-radius: 10px;
+        color: white;
+        padding-bottom: 10px;
+    }
+
+    .butDrop {
+        width: inherit;
+    }
+
+    .textFaq {
+        padding: 0 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .textFaq1 {
+        padding: 0 10px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 14px;
+    }
+    .accordion-item{
+        width: auto;
+    }
+
+    .cardFooter{
+        padding-top: 100px;
+        padding-left: 0;
+        padding-bottom: 50px;
+    }
+
+    .cardConnect{
+        padding-left: 0;
+    }
+
+    .itemConnect{
+        padding-top: 0;
+    }
+
+    .ftext2 {
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .fbutton {
+        height: 34px;
+        width: 100px;
+    }
+
+    .cRight{
+        padding-top: 30px;
+    }
+
+    .cardSearch{
+        position: static;
+        padding: 0 10px;
+    }
+
+    .cardSearch2{
+        display: grid;
+    }
+
+    .searchButton{
+        text-align: left;
+        width: 100%;
+    }
+
+    .cardCari{
+        position: static;
+        left: 30%; 
+        padding: 0 10px;
+    }
+
+    .hasilCard {
+        width: 100%;
+        height: 478px;
+    }
+
+    .hasil{
+        padding: 10px 10px;
     }
 }

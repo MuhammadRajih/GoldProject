@@ -16,10 +16,10 @@ function Search () {
         //     Launch
         // </Button>
         // <Offcanvas show={show} onHide={handleClose}>
-            <div className="row justify-content-md-center" style={{marginTop:"10px", position:"absolute", top:"490px", left:"150px"}}>
-                <div className="card" style={{width: "1047px", height: "106px"}}>
+            <div className="row cardSearch">
+                <div className="card cardSearch1">
                     <div className="card-body">
-                        <div className="d-flex gap-3">
+                        <div className="cardSearch2">
                             <div>
                                 <p className="searchText">Nama Mobil</p>
                                 <div className="input-group mb-3">
@@ -29,7 +29,7 @@ function Search () {
                             <div>
                                 <p className="searchText">Kategori</p>
                                 <div className="dropdown">
-                                    <button className="btn btn-secondary dropdown-toggle bg-light text-dark text-left"  type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{width: "200px", fontSize:"14px",textAlign:"left"}}>
+                                    <button className=" searchButton btn-secondary dropdown-toggle bg-light text-dark text-left"  type="button" data-bs-toggle="dropdown" aria-expanded="false" >
                                         Masukan Kapasitas Mobil
                                     </button>
                                     <ul className="dropdown-menu">
@@ -42,7 +42,7 @@ function Search () {
                             <div>
                                 <p className="searchText">Harga</p>
                                 <div className="dropdown">
-                                    <button className="btn btn-secondary dropdown-toggle bg-light text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{width: "219px", fontSize:"14px",textAlign:"left"}}>
+                                    <button className=" searchButton btn-secondary dropdown-toggle bg-light text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
                                         Masukan Harga Sewa per Hari
                                     </button>
                                     <ul className="dropdown-menu">
@@ -55,7 +55,7 @@ function Search () {
                             <div>
                                 <p className="searchText">Status</p>
                                 <div className="dropdown" >
-                                    <button className="btn btn-secondary dropdown-toggle bg-light text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{width: "200px", fontSize:"14px",textAlign:"left"}}>
+                                    <button className=" searchButton btn-secondary dropdown-toggle bg-light text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Disewa
                                     </button>
                                     <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">

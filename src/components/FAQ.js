@@ -3,7 +3,7 @@ import '../style.css';
 
 function Faq () {
     return (
-        <div className="cardFaq row mt-5 " style={{height: "600px"}}>
+        <div className="cardFaq row mt-5 ">
             <div className="sewa col-md-5 mt-3">
                 <div>
                     <p className="textFaq">Frequently Asked Question</p>
@@ -13,55 +13,65 @@ function Faq () {
                 </div>
             </div>
             <div className="col-md-7">
-                <div className="dropdown ">
-                    <button className="butDrop d-flex align-items-center btn btn-secondary btn-lg dropdown-toggle text-dark bg-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Apa saja syarat yang dibutuhkan?
-                    </button>
-                    {/* <!-- <div className="dropdown-menu" aria-labelledby="dropdownMenuButton"> --> */}
-                        {/* <!-- <a className="dropdown-item" href="#">Action</a>
-                        <a className="dropdown-item" href="#">Another action</a>
-                        <a className="dropdown-item" href="#">Something else here</a> -->
-                    <!-- </div> --> */}
+                <div class="accordion" id="accordionFlushExample1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
+                                <strong>Apa saja syarat yang dibutuhkan?</strong>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne1" data-bs-parent="#accordionFlushExample1">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                    </div>
                 </div>
-                <div className="dropdown">
-                    <button className="butDrop btn d-flex align-items-center btn-secondary btn-lg dropdown-toggle text-dark bg-light mt-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Berapa hari minimal sewa mobil lepas kunci?
-                    </button>
-                    {/* <!-- <div className="dropdown-menu" aria-labelledby="dropdownMenuButton"> -->
-                        <!-- <a className="dropdown-item" href="#">Action</a>
-                        <a className="dropdown-item" href="#">Another action</a>
-                        <a className="dropdown-item" href="#">Something else here</a> -->
-                    <!-- </div> --> */}
+                <div class="accordion mt-4" id="accordionFlushExample2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2" aria-expanded="false" aria-controls="flush-collapseOne2">
+                                <strong>Berapa hari minimal sewa mobil lepas kunci?</strong>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne2" data-bs-parent="#accordionFlushExample2">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                    </div>
                 </div>
-                <div className="dropdown">
-                    <button className="butDrop d-flex align-items-center btn btn-secondary btn-lg dropdown-toggle text-dark bg-light mt-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Berapa hari sebelumnya sabaiknya booking sewa mobil?
-                    </button>
-                    {/* <!-- <div className="dropdown-menu" aria-labelledby="dropdownMenuButton"> -->
-                        <!-- <a className="dropdown-item" href="#">Action</a>
-                        <a className="dropdown-item" href="#">Another action</a>
-                        <a className="dropdown-item" href="#">Something else here</a> -->
-                    <!-- </div> --> */}
+                <div class="accordion mt-4" id="accordionFlushExample3">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne3" aria-expanded="false" aria-controls="flush-collapseOne3">
+                                <strong>Berapa hari sebelumnya sabaiknya booking sewa mobil?</strong>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne3" data-bs-parent="#accordionFlushExample3">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                    </div>
                 </div>
-                <div className="dropdown">
-                    <button className="butDrop d-flex align-items-center btn btn-secondary btn-lg dropdown-toggle text-dark bg-light mt-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Apakah Ada biaya antar-jemput?
-                    </button>
-                    {/* <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a className="dropdown-item" href="#">Action</a>
-                        <a className="dropdown-item" href="#">Another action</a>
-                        <a className="dropdown-item" href="#">Something else here</a>
-                     </div>  */}
+                <div class="accordion mt-4" id="accordionFlushExample4">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne4" aria-expanded="false" aria-controls="flush-collapseOne4">
+                                <strong>Apakah Ada biaya antar-jemput?</strong>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne4" data-bs-parent="#accordionFlushExample4">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                    </div>
                 </div>
-                <div className="dropdown">
-                    <button className="butDrop d-flex align-items-center btn btn-secondary btn-lg dropdown-toggle text-dark bg-light mt-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Bagaimana jika terjadi kecelakaan?
-                    </button>
-                    {/* <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a className="dropdown-item" href="#">Action</a>
-                        <a className="dropdown-item" href="#">Another action</a>
-                        <a className="dropdown-item" href="#">Something else here</a>
-                    </div> */}
+                <div class="accordion mt-4" id="accordionFlushExample5">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne5" aria-expanded="false" aria-controls="flush-collapseOne5">
+                                <strong>Bagaimana jika terjadi kecelakaan?</strong>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne5" class="accordion-collapse collapse" aria-labelledby="flush-headingOne5" data-bs-parent="#accordionFlushExample5">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

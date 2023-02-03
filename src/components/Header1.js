@@ -5,11 +5,11 @@ import '../style.css';
 
 function Header1 () {
     return (
-        <div className="row hd" style={{backgroundColor: "#cfd4ed", height: "500px",marginBottom:"100px"}}>
+        <div className="row hd" style={{backgroundColor: "#cfd4ed", height: "500px"}}>
             <div className="col-lg-6 d-flex flex-column">
                 <div>
                     <p className="headText">
-                        Sewa & Rental Mobil Terbaik di Kawasan (Lokasimu)</p>
+                        Sewa & Rental Mobil Terbaik di Kawasan Bandung</p>
                 </div>
                 <div>
                     <p className="text1">

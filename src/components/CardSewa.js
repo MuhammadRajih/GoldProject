@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 function CardSewa () {
     return (     
-      <div className="CardSewa mt-5 d-flex flex-column justify-content-center">
-        <h5 className="card-title font-weight-bold mt-5" style={{fontSize: "2.5em"}}>
-          Sewa Mobil di (Lokasimu) Sekarang</h5>
-        <p className="card-text text-justify text-center" style={{fontSize: "15px"}}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br/>eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <div className="CardSewa mt-5">
+        <h5 className="textCard card-title mt-5">
+          Sewa Mobil di Bandung Sekarang</h5>
+        <p className="textCard1 card-text mt-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         <Link to="/CariMobil" className="butSewa1 btn btn-success mt-4" style={{height: "35px", width: "150px"}}>
           <p className="textSewa"> Mulai Sewa Mobil</p>
         </Link>

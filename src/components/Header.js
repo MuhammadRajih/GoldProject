@@ -10,7 +10,7 @@ function Header () {
             <div className="col-lg-6 d-flex flex-column">
                 <div>
                     <p className="headText">
-                        Sewa & Rental Mobil Terbaik di Kawasan (Lokasimu)</p>
+                        Sewa & Rental Mobil Terbaik di Kawasan Bandung</p>
                 </div>
                 <div>
                     <p className="text1">
