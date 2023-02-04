@@ -6,14 +6,14 @@ import Footer from "../components/Footer";
 
 
 const Main = () => {
-    return (
-      <div>
-        <Navigasi />
-        <Header />
-        <Search />
-        <Footer />
-      </ div>
-    )
+  return (
+    <div>
+      <Navigasi />
+      <Header />
+      <Search />
+      <Footer />
+    </ div>
+  )
 }
 
 export default Main;

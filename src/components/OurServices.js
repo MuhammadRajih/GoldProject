@@ -4,7 +4,7 @@ import servis from '../images/avatarService.png';
 
 const OurServices = () => {
     return (
-        <div className="row">
+        <div className="row" id="ourService">
             <div className="col-md-6 ">
                 <img className="avaService" src={servis} alt="Gambar Orang"></img>
             </div>

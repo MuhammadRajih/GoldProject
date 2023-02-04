@@ -1,80 +1,82 @@
-import React,{useState } from "react";
+import React, {useState} from "react";
 import '../style.css'; 
-import { Link } from 'react-router-dom';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import Button from 'react-bootstrap/Button';
+import { useNavigate } from "react-router-dom";
 
+const initialValues = {
+    nama: "",
+    kategori: "default",
+    price: "default",
+    status: false,
+  };
 
 function Search () {
-    // const [show, setShow] = useState(false);
-    // const handleClose = () => setShow(false);
-    // const handleShow = () => setShow(true);
+
+    const [values, setValues] = useState(initialValues);
+    const navigate = useNavigate();
+
+    const handleInputChange = (e) => {
+        setValues({
+          ...values,
+          [e.target.name]: e.target.value,
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        values.status = values.status === "true" ? true : false;
+        navigate("/HasilCari", { state: { nama: values.nama, kategori: values.kategori, price: values.price, status: values.status } });
+    };
+
 
     return (
-        // <>
-        // <Button variant="primary" onClick={handleShow}>
-        //     Launch
-        // </Button>
-        // <Offcanvas show={show} onHide={handleClose}>
-            <div className="row cardSearch">
+        <div className="row cardSearch">
+            <form onSubmit={handleSubmit}>
                 <div className="card cardSearch1">
                     <div className="card-body">
                         <div className="cardSearch2">
                             <div>
                                 <p className="searchText">Nama Mobil</p>
                                 <div className="input-group mb-3">
-                                    <input type="text" className="form-control" placeholder="Ketik nama/tipe mobil" aria-label="Username" aria-describedby="basic-addon1" style={{fontSize:"14px",textAlign:"left"}}/>
+                                    <input type="text" className="form-control" name="nama" defaultValue={values.nama} onChange={handleInputChange} placeholder="Ketik nama/tipe mobil" aria-label="Username" aria-describedby="basic-addon1" style={{fontSize:"14px",textAlign:"left"}}/>
                                 </div>
                             </div>
                             <div>
                                 <p className="searchText">Kategori</p>
-                                <div className="dropdown">
-                                    <button className=" searchButton btn-secondary dropdown-toggle bg-light text-dark text-left"  type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                                <select className="dropdown searchButton" name="kategori" defaultValue={values.kategori} onChange={handleInputChange}>
+                                    <option value="default">
                                         Masukan Kapasitas Mobil
-                                    </button>
-                                    <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="#">2 - 4 orang</a></li>
-                                        <li><a className="dropdown-item" href="#">4 - 6 orang</a></li>
-                                        <li><a className="dropdown-item" href="#">6 - 8 orang</a></li>
-                                    </ul>
-                                </div>
+                                    </option>
+                                    <option value="small">2 - 4 orang</option>
+                                    <option value="medium">4 - 6 orang</option>
+                                    <option value="large">6 - 8 orang</option>
+                                </select>
                             </div>
                             <div>
                                 <p className="searchText">Harga</p>
-                                <div className="dropdown">
-                                    <button className=" searchButton btn-secondary dropdown-toggle bg-light text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                                <select className="dropdown searchButton" name="price" defaultValue={values.price} onChange={handleInputChange}>
+                                    <option value="default">
                                         Masukan Harga Sewa per Hari
-                                    </button>
-                                    <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="#">&lt;Rp. 400.000</a></li>
-                                        <li><a className="dropdown-item" href="#">Rp. 400.000 - Rp. 600.000</a></li>
-                                        <li><a className="dropdown-item" href="#">&gt;Rp. 600.000</a></li>
-                                    </ul>
-                                </div>
+                                    </option>
+                                    <option value="cheap">&lt;Rp. 400.000</option>
+                                    <option value="mid">Rp. 400.000 - Rp. 600.000</option>
+                                    <option value="high">&gt;Rp. 600.000</option>
+                                </select>
                             </div>
                             <div>
                                 <p className="searchText">Status</p>
-                                <div className="dropdown" >
-                                    <button className=" searchButton btn-secondary dropdown-toggle bg-light text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Disewa
-                                    </button>
-                                    <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a className="dropdown-item" href="#">Tidak Tersedia</a>
-                                    </div>
-                                </div>
+                                <select className="dropdown searchButton" name="status" defaultValue={values.status} onChange={handleInputChange}>
+                                    <option value={true}>Disewa</option>
+                                    <option value={false}>Tidak Tersedia</option>
+                                </select>
                             </div>
-                            {/* <div className="">
-                                <a href="#" className="btn btn-success" style={{height: "33px" ,width: "92px", fontSize: "14px", marginTop: "35px"}}>Cari Mobil</a>
-                            </div> */}
-                            <Link to="/HasilCari" className=" btn btn-success" style={{height: "33px" ,width: "92px", fontSize: "14px", marginTop: "35px"}}>
+                            <button type="submit" className="btn btn-primary" style={{height: "33px" ,width: "92px", fontSize: "14px", marginTop: "35px"}}>
                                 Cari Mobil
-                            </Link>
+                            </button>
                         </div>
                     </div>
                 </div>
-            </div>
-        // </Offcanvas>
-        // </>
+            </form>
+        </div>
     )   
 }
 

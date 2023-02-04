@@ -7,7 +7,7 @@ import Reward from '../images/reward.png';
 
 function WhyUs () {
     return (
-        <div>
+        <div id="whyUs">
             <div className="row whyRow">
                 <p className="whyText mt-5">Why Us?</p>
                 <p className="text3">Mengapa harus pilih Binar Car Rental?</p>

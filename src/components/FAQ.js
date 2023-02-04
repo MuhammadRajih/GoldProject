@@ -3,7 +3,7 @@ import '../style.css';
 
 function Faq () {
     return (
-        <div className="cardFaq row mt-5 ">
+        <div className="cardFaq row mt-5" id="faq">
             <div className="sewa col-md-5 mt-3">
                 <div>
                     <p className="textFaq">Frequently Asked Question</p>

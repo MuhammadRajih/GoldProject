@@ -7,59 +7,17 @@ import photo1 from '../images/img_photo1.png';
 import rate from '../images/Rate.png';
 
 
-// function Slider () {
-//     return (
-//         <div className="row justify-content-md-center">
-//             <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel" >
-//                 <ol className="carousel-indicators">
-//                     <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active" style={{backgroundColor: "#0D28A6"}}></li>
-//                     <li data-target="#carouselExampleIndicators" data-slide-to="1" style={{backgroundColor: "#0D28A6"}}></li>
-//                     <li data-target="#carouselExampleIndicators" data-slide-to="2" style={{backgroundColor: "#0D28A6"}}></li>
-//                 </ol>
-//                 <div className="carousel-inner">
-//                     <div className="carousel-item active">
-                        // <div className="card mb-3" style={{height: "150px", width: "550px"}}>
-                        //     <div className="card-body">
-                        //         <h5 className="card-title">Sopir Profesional</h5>
-                        //         <p className="card-text">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
-                        //     </div>
-                        // </div>
-//                     </div>
-//                     <div className="carousel-item"> 
-//                         <div className="card mb-3" style={{height: "150px", width: "550px"}}>
-//                             <div className="card-body">
-//                                 <h5 className="card-title">Sopir Profesional</h5>
-//                                 <p className="card-text">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
-//                             </div>
-//                         </div>
-//                     </div>
-//                     <div className="carousel-item">
-//                         <div className="card mb-3" style={{height: "150px", width: "550px"}}>
-//                             <div className="card-body">
-//                                 <h5 className="card-title">Sopir Profesional</h5>
-//                                 <p className="card-text">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//          </div>
-//     )
-// }
-
-// export default Slider;
-
 function Slider() {
   return (
-    <div className="sliderSection">
+    <div className="sliderSection" id="testimonial">
       <h2 style={{fontSize: "24px"}}>Testimonial</h2>
       <p style={{fontSize: "14px",fontWeight:"bold"}}>Berbagai review positif dari para pelanggan kami</p>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
-        <div class="carousel-inner" style={{ textAlign:"center"}}>
-          <div class="carousel-item active" >
+      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" >
+        <div className="carousel-inner" style={{ textAlign:"center"}}>
+          <div className="carousel-item active" >
             <div className="cardCarousel align-items-center gap-4">
               <div>
-                <img src={photo1} class="d-block" alt="gambar"/>
+                <img src={photo1} className="d-block" alt="gambar"/>
               </div>
               <div className="card-body">
                   <img src={rate} className="card-title"></img>
@@ -69,10 +27,10 @@ function Slider() {
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <div className="cardCarousel align-items-center gap-4">
               <div className="">
-                <img src={photo} class="d-block" alt="gambar"/>
+                <img src={photo} className="d-block" alt="gambar"/>
               </div>
               <div className="card-body">
                   <img src={rate} className="card-title"></img>
@@ -82,10 +40,10 @@ function Slider() {
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <div className="cardCarousel align-items-center gap-4">
               <div className="">
-                <img src={photo1} class="d-block" alt="gambar"/>
+                <img src={photo1} className="d-block" alt="gambar"/>
               </div>
               <div className="card-body">
                   <img src={rate} className="card-title"></img>
