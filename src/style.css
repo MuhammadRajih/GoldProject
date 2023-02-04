@@ -350,9 +350,8 @@ body {
 }
 
 .cardDetail {
-    padding: 200px 125px;
+    padding: 200px 125px 600px 125px;
     height: 700px;
-    margin-bottom: 100px;
 }
 
 
@@ -537,14 +536,16 @@ body {
     }
 
     .cardDetail{
-        padding: 5px 10px 90px 10px;
-        height: 0%;
-        margin-bottom: 0;
+        padding: 5px 10px;
+        height: 50%;
     }
 
     .detailCard {
         height: auto;
-        /* margin-bottom: 100px; */
+    }
+
+    .detailCard1 {
+        height: auto;
     }
 
 
