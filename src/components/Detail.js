@@ -4,12 +4,12 @@ import user from '../images/users.png';
 import { useParams } from "react-router-dom";
 
 function Detail() {
-    const params = useParams;
+    const params = useParams();
     const [mobil, setMobil] = useState({});
 
     useEffect(() => {
         async function getCarDetail() {
-          const request = await fetch(`https://bootcamp-rent-cars.herokuapp.com/admin/car/1423` , {
+          const request = await fetch(`https://bootcamp-rent-cars.herokuapp.com/admin/car/${params.id}` , {
             headers:{
               access_token :"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGJjci5pbyIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTY3NTU4MTU1MX0.GRQEliNAj91ehPs7Q8KmxY7w8je8BGElrucZEdlRL50"
             }
@@ -64,7 +64,7 @@ function Detail() {
                             <h6 className="row card-title textDetail mt-2">{mobil.name}</h6>
                             <div className="d-flex align-items-center">
                                 <img src={user} style={{width:"13px", height:"13px"}}></img>
-                                <p style={{fontWeight:"normal", paddingLeft:"10px", marginTop:"14px"}}>4-7 Orang</p>
+                                <p style={{fontWeight:"normal", paddingLeft:"10px", marginTop:"1px"}}>4-7 Orang</p>
                             </div>
                             <div className="grid">
                                 <p className="card-text mt-2">Total</p>
