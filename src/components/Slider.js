@@ -1,7 +1,5 @@
 import React from "react"
 import '../style.css'; 
-import Carousel from 'react-bootstrap/Carousel';
-import headerCar from '../images/headerCar.png';
 import photo from '../images/img_photo.png';
 import photo1 from '../images/img_photo1.png';
 import rate from '../images/Rate.png';
@@ -42,16 +40,17 @@ function Slider() {
           </div>
           <div className="carousel-item">
             <div className="cardCarousel align-items-center gap-4">
-              <div className="">
+              <div>
                 <img src={photo1} className="d-block" alt="gambar"/>
               </div>
               <div className="card-body">
                   <img src={rate} className="card-title"></img>
                   <p className="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                  It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
-                  Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the
-                   more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word 
-                   in classical literature, discovered the undoubtable source.</p>
+                    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the
+                    more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word 
+                    in classical literature, discovered the undoubtable source.
+                  </p>
                   <p className="blockquote-footer">John Dee 32, Bromo</p>
               </div>
             </div>

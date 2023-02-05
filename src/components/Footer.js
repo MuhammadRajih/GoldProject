@@ -7,7 +7,7 @@ import twitch from '../images/icon_twitch.png';
 import email from '../images/icon_mail.png';
 
 
-const Footer = () => {
+function Footer() {
     return (
         <div className="row cardFooter">
             <div className="ftext1 col-md-3">
@@ -32,15 +32,15 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="col-md-3 cardConnect">
-                <div className="row ">
+                <div className="row">
                     <p><strong> Connect with us </strong></p>
                 </div>
                 <div className="itemConnect">
-                    <a href="#" class="fa"><img src={facebook}></img></a>
-                    <a href="#" class="fa"><img src={insta}></img></a>
-                    <a href="#" class="fa"><img src={twitter}></img></a>
-                    <a href="#" class="fa"><img src={email}></img></a>
-                    <a href="#" class="fa"><img src={twitch}></img></a>
+                    <a href="#" className="fa"><img src={facebook}></img></a>
+                    <a href="#" className="fa"><img src={insta}></img></a>
+                    <a href="#" className="fa"><img src={twitter}></img></a>
+                    <a href="#" className="fa"><img src={email}></img></a>
+                    <a href="#" className="fa"><img src={twitch}></img></a>
                 </div>
             </div>
             <div className="col-md-3 cRight">

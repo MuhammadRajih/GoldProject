@@ -4,10 +4,10 @@ import '../style.css';
 import { Link } from 'react-router-dom';
 
 
-function Header () {
+function Header() {
     return (
-        <div className="row hd" style={{backgroundColor: "#cfd4ed", height: "500px"}}>
-            <div className="col-lg-6 d-flex flex-column">
+        <div className="row" style={{backgroundColor: "#cfd4ed",alignItems:"end"}}>
+            <div className="col-lg-6 d-flex mb-5 flex-column">
                 <div>
                     <p className="headText">
                         Sewa & Rental Mobil Terbaik di Kawasan Bandung</p>
@@ -20,7 +20,7 @@ function Header () {
                     <p className="textSewa">Mulai Sewa Mobil</p>
                 </Link>
             </div>
-            <div className="col-lg-6 ">
+            <div className="col-lg-6">
                 <img className="fotoMobil" src={headerCar} alt="Gambar Mobil"></img>
             </div>
         </div>

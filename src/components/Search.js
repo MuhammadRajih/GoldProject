@@ -7,10 +7,9 @@ const initialValues = {
     kategori: "default",
     price: "default",
     status: false,
-  };
+};
 
-function Search () {
-
+function Search() {
     const [values, setValues] = useState(initialValues);
     const navigate = useNavigate();
 
@@ -27,6 +26,7 @@ function Search () {
         navigate("/HasilCari", { state: { nama: values.nama, kategori: values.kategori, price: values.price, status: values.status } });
     };
 
+    console.log(values.kategori);
 
     return (
         <div className="row cardSearch">

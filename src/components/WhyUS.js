@@ -5,7 +5,7 @@ import Tag from '../images/priceTag.png';
 import Time from '../images/time.png';
 import Reward from '../images/reward.png';
 
-function WhyUs () {
+function WhyUs() {
     return (
         <div id="whyUs">
             <div className="row whyRow">

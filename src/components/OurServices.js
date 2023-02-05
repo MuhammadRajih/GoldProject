@@ -2,7 +2,7 @@ import React from "react";
 import '../style.css';
 import servis from '../images/avatarService.png';
 
-const OurServices = () => {
+function OurServices() {
     return (
         <div className="row" id="ourService">
             <div className="col-md-6 ">

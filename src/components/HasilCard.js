@@ -3,7 +3,7 @@ import '../style.css';
 import { Link } from 'react-router-dom';
 
 
-function HasilCard () {
+function HasilCard() {
     const [cars, setCars] = useState([]);
 
     useEffect(() => {
@@ -23,9 +23,8 @@ function HasilCard () {
         <>
         <div className="grid-container">
             {(cars.length > 0 ) && cars.map((item) => (
-
-                <div className="hasil">
-                    <div key={item.id}>
+                <div key={item.id}>
+                    <div className="hasil">
                         <div className="card hasilCard">
                             <div className="card-body ">
                                 <img src={item.image} alt="ikon" className="gambarHasil"></img>
@@ -43,7 +42,7 @@ function HasilCard () {
                 ))}
         </div>
         </>
-        )
-    }
+    )
+}
 
  export default HasilCard;

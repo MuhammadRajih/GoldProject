@@ -9,19 +9,19 @@ import Faq from "../components/FAQ";
 import Footer from "../components/Footer";
 
 
-const Main = () => {
-    return (
-      <div>
-        <Navigasi />
-        <Header />
-        <OurServices />
-        <WhyUs />
-        <Slider />
-        <CardSewa />
-        <Faq />
-        <Footer />
-      </ div>
-    )
+function Main() {
+  return (
+    <div>
+      <Navigasi />
+      <Header />
+      <OurServices />
+      <WhyUs />
+      <Slider />
+      <CardSewa />
+      <Faq />
+      <Footer />
+    </ div>
+  )
 }
 
 export default Main;

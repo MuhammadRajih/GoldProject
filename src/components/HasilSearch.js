@@ -2,11 +2,7 @@ import React, {useState} from "react";
 import '../style.css'; 
 import { useNavigate, useLocation } from "react-router-dom";
 
-
-
-
-
-function HasilSearch () {
+function HasilSearch() {
     const Loc = useLocation();
     const current = Loc.state;
     const initialValues = {

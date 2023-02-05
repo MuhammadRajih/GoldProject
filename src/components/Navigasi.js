@@ -6,16 +6,15 @@ import { Link } from "react-router-dom";
 function Navigasi() {
     const handleClickScroll = (event) => {
         const element = document.getElementById(event.target.value);
-
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      };
+    };
 
     return (
         <div className="row">
             <nav className="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
+                <div className="container-fluid">
                     <div className="col home">
                         <Link to="/" className="buttonHome btn btn-primary">
                             <p className="textSewa">BCR</p>

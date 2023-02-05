@@ -2,11 +2,11 @@ body {
     padding: 0 12px;
 }
 
-.accordion-item{
-    width: 668px;
+.accordion-item {
+    width: 100%;
 }
 
-.home{
+.home {
     text-align: left;
     padding: 0 100px;
 }
@@ -26,9 +26,8 @@ body {
 }
 
 .fotoMobil {
-    margin-top: 50px;
-    width: 660px;
-    height: 450px; 
+    width: 100%;
+    height: 100%; 
 }
 
 .headerText {
@@ -46,7 +45,6 @@ body {
     text-align: left;
     font-size: 36px;
     font-weight: bold;
-    padding-top: 140px;
     padding-left: 100px;
 }
 
@@ -115,7 +113,7 @@ body {
     padding-left: 100px;
 }
 
-.whyRow{
+.whyRow {
     padding: 0 100px;
 }
 
@@ -130,20 +128,20 @@ body {
     list-style-image: url(images/correct.png);
 }
 
-.cardFooter{
+.cardFooter {
     padding: 100px 100px 0 100px;
 }
 
-.cardFaq{
+.cardFaq {
     height: "600px"
 }
 
-.cardConnect{
+.cardConnect {
     margin-bottom: -5px;
     text-align: left;
 }
 
-.itemConnect{
+.itemConnect {
     display: flex;
     gap: 35px;
 }
@@ -157,7 +155,7 @@ body {
     text-align: left;
 }
 
-.searchButton{
+.searchButton {
     width: 219px;
     font-size: 14px;
     text-align: left;
@@ -165,7 +163,7 @@ body {
     height: 35px;
 }
 
-.searchButton1{
+.searchButton1 {
     width: 219px;
     font-size: 14px;
     text-align: left;
@@ -190,43 +188,59 @@ body {
     opacity: 0.7;
 }
 
-.CardSewa {
+.testing {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    justify-content: center;
-    background-color: #0D28A6; 
-    border-radius: 10px;
+    background-color: blue;
+    align-items: center;
     color: white;
+    border-radius: 10px;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.testing1 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.CardSewa {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: #0D28A6; 
+    padding: 0 50px;
+    border-radius: 10px;
     height: 280px;
 } 
 
-.cardSearch{
+.cardSearch {
     top: 490px;
     left: 150px;
     position: absolute;
     justify-content: center;
 }
 
-.cardCari{
+.cardCari {
     top: 100px;
     left: 150px;
     position: absolute;
     justify-content: center;
 }
 
-.cardSearch1{
+.cardSearch1 {
     width: 1047px;
 }
 
-.cardSearch2{
+.cardSearch2 {
     display: flex;
     gap: 20px ;
 }
 
-.cRight{
+.cRight {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -256,14 +270,9 @@ body {
 .whyCard {
     text-align: left;
     padding: 20px 100px;
-
 }
 
-.whyCard1 {
-    padding-left: 0;
-}
-
-.textCard{
+.textCard {
     font-weight: bold;
     font-size: 36px;
 }
@@ -278,7 +287,7 @@ body {
     border-radius: 100%;
 }
 
-.sliderButton{
+.sliderButton {
     margin: 0 auto;
     justify-content:center;
     width: 90px;
@@ -286,14 +295,15 @@ body {
     justify-content: space-between;
 }
 
-.butNext:hover{
-    background-color: #5CB85F;
-}
-.butPrev:hover{
+.butNext:hover {
     background-color: #5CB85F;
 }
 
-.searchText{
+.butPrev:hover {
+    background-color: #5CB85F;
+}
+
+.searchText {
     font-size: 12px;
     text-align: left;
 }
@@ -312,7 +322,7 @@ body {
 
 }
 
-.gambarHasil{
+.gambarHasil {
     width: 100%;
 }
 
@@ -327,12 +337,12 @@ body {
     padding-left: 10px;
 }
 
-.detailCard{
+.detailCard {
     height: 618px;
 }
 
 
-.listDetail{
+.listDetail {
     color: gray;
     text-align: left;
 }
@@ -348,8 +358,8 @@ body {
     margin:0 auto;
 }
 
-.textCard1{
-    padding: 0 350px;
+.textCard1 {
+    padding: 0 250px;
     text-align: center;
     font-size: 14px;
 }
@@ -359,13 +369,10 @@ body {
     height: 700px;
 }
 
-.buttonHasilCard{
+.buttonHasilCard {
     max-width: 100%;
     height:48px;
 }
-
-
-
 
 
 @media only screen and (max-width: 990px) {
@@ -392,18 +399,8 @@ body {
         padding-top: 10px;
     }
 
-    .butSewa{
+    .butSewa {
         margin-left: 0px;
-    }
-
-    .fotoMobil{
-        margin-top: 35px;
-        height: 331px;
-        width: inherit;
-    }
-
-    .hd {
-        padding-bottom: 700px;
     }
 
     .avaService {
@@ -438,14 +435,14 @@ body {
         height: auto;
     }
 
-    .textCard{
+    .textCard {
         padding: 15px 70px;
         font-weight: 700;
         text-align: center;
         font-size: 24px;
     }
 
-    .textCard1{
+    .textCard1 {
         padding: 0 70px;
     }
 
@@ -476,21 +473,21 @@ body {
         text-align: center;
         font-size: 14px;
     }
-    .accordion-item{
-        width: auto;
+    .accordion-item { 
+        width: 100%;
     }
 
-    .cardFooter{
+    .cardFooter {
         padding-top: 100px;
         padding-left: 0;
         padding-bottom: 50px;
     }
 
-    .cardConnect{
+    .cardConnect {
         padding-left: 0;
     }
 
-    .itemConnect{
+    .itemConnect {
         padding-top: 0;
     }
 
@@ -504,25 +501,25 @@ body {
         width: 100px;
     }
 
-    .cRight{
+    .cRight {
         padding-top: 30px;
     }
 
-    .cardSearch{
+    .cardSearch {
         position: static;
         padding: 0 10px;
     }
 
-    .cardSearch2{
+    .cardSearch2 {
         display: grid;
     }
 
-    .searchButton{
+    .searchButton {
         text-align: left;
         width: 100%;
     }
 
-    .cardCari{
+    .cardCari {
         position: static;
         left: 30%; 
         padding: 0 10px;
@@ -533,20 +530,20 @@ body {
         height: 478px;
     }
 
-    .hasil{
+    .hasil {
         padding: 5px 10px;
         width: 100%;
     }
     
-    .gambarHasil{
+    .gambarHasil {
         width: 100%;
     }
 
-    .cardSearch1{
+    .cardSearch1 {
         width: 100%;
     }
 
-    .cardDetail{
+    .cardDetail {
         padding: 5px 10px;
         height: 50%;
     }
@@ -559,7 +556,7 @@ body {
         height: auto;
     }
 
-    .buttonHasilCard{
+    .buttonHasilCard {
         width: 100%;
     }
 
@@ -569,5 +566,20 @@ body {
         grid-template-columns: auto;
         gap: 10px;
         padding: 0;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+    .cRight {
+        padding-top: 0;
+    }
+    .cardFooter {
+        padding-right: 0;
+    }
+
+    .ftext2 {
+        padding-left: 50px;
+        text-align: left;
     }
 }

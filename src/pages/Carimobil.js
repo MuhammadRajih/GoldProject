@@ -4,8 +4,7 @@ import Header from "../components/Header1";
 import Search from "../components/Search";
 import Footer from "../components/Footer";
 
-
-const Main = () => {
+function Main() {
   return (
     <div>
       <Navigasi />

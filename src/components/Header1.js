@@ -3,7 +3,7 @@ import headerCar from '../images/headerCar.png';
 import '../style.css'; 
 
 
-function Header1 () {
+function Header1() {
     return (
         <div className="row hd" style={{backgroundColor: "#cfd4ed", height: "500px"}}>
             <div className="col-lg-6 d-flex flex-column">
