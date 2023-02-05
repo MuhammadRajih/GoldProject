@@ -69,7 +69,7 @@ function Search () {
                                     <option value={false}>Tidak Tersedia</option>
                                 </select>
                             </div>
-                            <button type="submit" className="btn btn-primary" style={{height: "33px" ,width: "92px", fontSize: "14px", marginTop: "35px"}}>
+                            <button type="submit" className="btn btn-success" style={{height: "33px" ,width: "92px", fontSize: "14px", marginTop: "35px"}}>
                                 Cari Mobil
                             </button>
                         </div>

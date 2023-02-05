@@ -21,26 +21,27 @@ function HasilCard () {
       
     return (
         <>
-        {(cars.length > 0 ) && cars.map((item) => (
-        <div className="d-flex flex-column hasil">
-            <div key={item.id}>
-                <div className="col-lg-3 ">
-                    <div className="card hasilCard">
-                        <div className="card-body">
-                            <img src={item.image} alt="ikon" className="gambarHasil"></img>
-                                <h6 className="textHasil">{item.name}</h6>
+        <div className="grid-container">
+            {(cars.length > 0 ) && cars.map((item) => (
+
+                <div className="hasil">
+                    <div key={item.id}>
+                        <div className="card hasilCard">
+                            <div className="card-body ">
+                                <img src={item.image} alt="ikon" className="gambarHasil"></img>
+                                <h6 className="textHasil mt-2">{item.name}</h6>
                                 <p className="card-text">Rp.{item.price} / hari</p>
                                 <p className="card-text" style={{fontSize:"14px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                <Link to={`/DetailMobil/${item.id}`} className="btn btn-success mt-3" style={{width:"285px", height:"48px"}}>
+                                <Link to={`/DetailMobil/${item.id}`} className="buttonHasilCard btn btn-success mt-3">
                                     <p className="d-flex justify-content-center mt-1">Pilih Mobil</p>
                                 </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                ))}
         </div>
-        ))}
         </>
         )
     }

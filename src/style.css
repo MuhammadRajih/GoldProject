@@ -299,12 +299,17 @@ body {
 }
 
 .hasilCard {
-    max-width: 333px;
+    width: 333px;
     height: 478px;
 } 
 
-.hasil{
-    padding-top: 200px;
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 220px 120px 0 120px;
+
 }
 
 .gambarHasil{
@@ -354,12 +359,18 @@ body {
     height: 700px;
 }
 
+.buttonHasilCard{
+    max-width: 100%;
+    height:48px;
+}
+
+
+
 
 
 @media only screen and (max-width: 990px) {
     .navbar-nav {
         text-align: left;
-        /* padding-right: 200px; */
         font-weight: bold;
     }
 
@@ -518,12 +529,12 @@ body {
     }
 
     .hasilCard {
-        width: 150%;
+        width: 100%;
         height: 478px;
     }
 
     .hasil{
-        padding: 10px 10px;
+        padding: 5px 10px;
         width: 100%;
     }
     
@@ -548,5 +559,15 @@ body {
         height: auto;
     }
 
+    .buttonHasilCard{
+        width: 100%;
+    }
 
+    .grid-container {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+        padding: 0;
+    }
 }
